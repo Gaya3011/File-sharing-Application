@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+    min-height: 100vh;
+}
+
+
+/* Main container */
+
+.container {
+    width: 700px;
+    max-width: 90%;
+    margin: 60px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Heading */
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* Upload form */
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 35px;
+}
+
+
+input[type="file"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #555;
+}
+
+
+/* Heading 2 */
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+/* File item */
+
+.file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+
+    background-color: #f7f7f7;
+
+    border-radius: 8px;
+}
+
+
+.file span {
+    word-break: break-all;
+    margin-right: 10px;
+}
+
+
+/* Delete button */
+
+.delete {
+    background-color: #d9534f;
+    margin-left: 5px;
+}
+
+
+.delete:hover {
+    background-color: #c9302c;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    form {
+        flex-direction: column;
+    }
+
+    .file {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
